@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header class="header">
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="page2.html">Page 2</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+
+      <!-- Search -->
+      <input 
+        type="text" 
+        class="search-input" 
+        placeholder="Search properties..."
+      >
+
+      <!-- Filters -->
+      <div class="filters">
+
+        <select>
+          <option value="">Rent or Sale</option>
+          <option value="rent">Rent</option>
+          <option value="sale">Sale</option>
+        </select>
+
+        <select>
+          <option value="">Area</option>
+          <option value="downtown">Downtown</option>
+          <option value="suburbs">Suburbs</option>
+          <option value="beach">Beach</option>
+        </select>
+
+        <select>
+          <option value="">Sort By</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+
+        <!-- Price Range -->
+        <div class="range-box">
+          <label>Price</label>
+          <div class="range-inputs">
+            <input type="range" min="0" max="10000" value="2000" id="minPrice">
+            <input type="range" min="0" max="10000" value="8000" id="maxPrice">
+          </div>
+          <div class="range-values">
+            <span id="minValue">$2000</span>
+            <span id="maxValue">$8000</span>
+          </div>
+        </div>
+
+        <!-- Filter Button -->
+        <button class="filter-btn">Apply Filters</button>
+
+      </div>
+    </div>
+  </section>
+  <section class="ads">
+  <div class="ads-container" id="adsContainer">
+    <!-- Ads injected here -->
+  </div>
+</section>
+  <script type="module" src="/index.js" ></script>
+</body>
+</html>
