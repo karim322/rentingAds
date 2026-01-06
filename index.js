@@ -26,3 +26,12 @@ minPrice.addEventListener("input", updatePrices);
 maxPrice.addEventListener("input", updatePrices);
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.ad-card').forEach(card => {
+    card.onclick = (el) => {
+      const link = el.currentTarget.dataset.link;
+      if (link) window.location.assign(link);
+    };
+  });
+});
+

@@ -2,6 +2,10 @@
   const article = document.createElement("article");
   article.className = "ad-card";
 
+  const link = document.createElement("a")
+  link.href = ad.adLink;
+  link.target="_blank"
+
   /* Image */
   const figure = document.createElement("figure");
   figure.className = "ad-image";
@@ -25,13 +29,13 @@
   features.className = "ad-features";
 
   const rooms = document.createElement("li");
-  rooms.textContent = `🛏 ${ad.rooms} Rooms`;
+  rooms.textContent = `🛏 ${ad.rooms} غرف`;
 
   const size = document.createElement("li");
-  size.textContent = `📐 ${ad.size} m²`;
+  size.textContent = `📐 ${ad.size} `;
 
   const baths = document.createElement("li");
-  baths.textContent = `🛁 ${ad.bathrooms} Bathrooms`;
+  baths.textContent = `🛁 ${ad.bathrooms} حمام`;
 
   features.append(rooms, baths, size);
 
@@ -46,7 +50,7 @@
 
   /* Assemble */
   info.append(title, features, price);
-  article.append(figure, info);
+  article.append(figure, info,link);
 
   return article;
 }
