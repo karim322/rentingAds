@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>ُEijar.Masaratak</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <header class="header">
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="./assets/Logo.png" alt="Logo" class="logo">
 
     <nav class="nav">
       <a href="index.html">Home</a>
@@ -23,46 +23,33 @@
       <input 
         type="text" 
         class="search-input" 
-        placeholder="Search properties..."
+        placeholder="اضف كلمات للبحث ........"
       >
 
       <!-- Filters -->
       <div class="filters">
 
         <select>
-          <option value="">Rent or Sale</option>
-          <option value="rent">Rent</option>
-          <option value="sale">Sale</option>
+          <option value="">الغرض</option>
+          <option value="rent">للايجار</option>
+          <option value="sale">للبيع</option>
         </select>
 
         <select>
-          <option value="">Area</option>
-          <option value="downtown">Downtown</option>
-          <option value="suburbs">Suburbs</option>
-          <option value="beach">Beach</option>
+          <option value="">المنطقه</option>
         </select>
 
         <select>
-          <option value="">Sort By</option>
-          <option value="price-low">Price: Low to High</option>
-          <option value="price-high">Price: High to Low</option>
+          <option value="">التصنيف</option>
+          <option value="price-low">السعر: الاقل للاعلي</option>
+          <option value="price-high">السعر: الاعلي للاقل</option>
+          <option value="price-high">الاحدث اضافه</option>
         </select>
 
         <!-- Price Range -->
-        <div class="range-box">
-          <label>Price</label>
-          <div class="range-inputs">
-            <input type="range" min="0" max="10000" value="2000" id="minPrice">
-            <input type="range" min="0" max="10000" value="8000" id="maxPrice">
-          </div>
-          <div class="range-values">
-            <span id="minValue">$2000</span>
-            <span id="maxValue">$8000</span>
-          </div>
-        </div>
 
         <!-- Filter Button -->
-        <button class="filter-btn">Apply Filters</button>
+        <button class="filter-btn">بحث</button>
 
       </div>
     </div>
